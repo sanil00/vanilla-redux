@@ -1,4 +1,4 @@
-import {createStore} from 'redux' 
+import {createStore} from 'redux'  // defrecated
 import {configureStore} from '@reduxjs/toolkit'
 
 // TYPE을 미리 변수로 정의하면 오타가 발생해도 실행시에 오타를 잡아낼수있다./
@@ -37,7 +37,7 @@ countStore.subscribe(onChange) // dispatch가 실행되면 따라서 실행된�
 
 
 const clickAdd=  ()=>{
-    countStore.dispatch({type:ADD}) // state변경 함수 type을 reducer의 type에서 사용할수있다.
+    countStore.dispatch({type:ADD}) // state변경함수 type을 reducer의 type에서 사용할수있다.
 }
 
 const clickMinus=  ()=>{
