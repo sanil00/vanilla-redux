@@ -1,14 +1,14 @@
 import React from "react"
 import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
-import { actionCreators } from "../store"
+import { remove } from "../store"
 
 function ToDo({ text, id }) {
     const dispatch = useDispatch()
     const deleteToDo = () => {
         // console.log(state)
         // console.log(rest)
-        dispatch(actionCreators.deleteToDo(id))
+        dispatch(remove(id))
     }
 
     return (
@@ -19,4 +19,4 @@ function ToDo({ text, id }) {
     )
 }
 
-export default ToDo 
+export default ToDo
